@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import AddToCartButton from '@/app/src/components/product/AddToCartButton';
-import { products } from '@/app/src/data/products';
+import { products } from '../../../app/src/data/products';
 
 export default function ProductPage({ params }: { params: { id: string } }) {
   const productId = parseInt(params.id);
