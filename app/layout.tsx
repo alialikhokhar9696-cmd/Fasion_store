@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="flex flex-col min-h-screen">
         <CartProvider>
           <Header />
-          <main className="flex-grow container mx-auto px-4 py-8">
+          <main className="grow container mx-auto px-4 py-8">
             {children}
           </main>
           <Footer />

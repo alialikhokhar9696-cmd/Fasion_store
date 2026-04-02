@@ -1,10 +1,10 @@
 import { notFound } from 'next/navigation';
-import { Product } from '@/app/src/data/products';
 import AddToCartButton from '@/app/src/components/product/AddToCartButton';
+import { products } from '@/app/src/data/products';
 
 export default function ProductPage({ params }: { params: { id: string } }) {
   const productId = parseInt(params.id);
-  const product = products.find(p => p.id === productId);
+  const product:any = products.find(p => p.id === productId);
 
   if (!product) {
     notFound();
