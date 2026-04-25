@@ -19,7 +19,7 @@ const products: Product[] = [
   { id: 3, name: "Summer Maxi Dress", price: 4499, image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&h=500&fit=crop", category: "Dresses" },
   
   // Tops & Blouses
-  { id: 4, name: "Silk Blouse", price: 3499, image: "https://images.unsplash.com/photo-1604695573705-6f53c2f94d4f?w=400&h=500&fit=crop", category: "Tops" },
+  { id: 4, name: "Silk Blouse", price: 3499, image: "female2.jfif", category: "Tops" },
   { id: 5, name: "Cotton T-Shirt", price: 1999, image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop", category: "Tops" },
   
   // Jeans & Pants

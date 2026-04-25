@@ -17,7 +17,7 @@ const categories = [
   },
   {
     name: "Kids Collection",
-    image: "https://images.unsplash.com/photo-1503919545889-a8a2c1e7e6c9?w=600&h=700&fit=crop", // 👶 Cute kids
+    image: "kid1.jfif", // 👶 Cute kids
     href: "/services/kids",
     items: "30+ items"
   },

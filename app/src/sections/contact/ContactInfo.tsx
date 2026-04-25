@@ -29,36 +29,36 @@ export default function ContactInfo() {
       name: 'Facebook', 
       icon: 'f', 
       href: 'https://facebook.com/anasfashion',
-      bgColor: 'bg-[#1877f2] hover:bg-[#0e5cbf]'
+      bgColor: '#1877f2'
     },
     { 
       name: 'Instagram', 
       icon: 'ig', 
       href: 'https://instagram.com/anasfashion',
-      bgColor: 'bg-gradient-to-tr from-[#833ab4] via-[#fd1d1d] to-[#f77737] hover:opacity-90'
+      bgColor: '#e4405f'
     },
     { 
       name: 'Twitter', 
-      icon: 'x', 
+      icon: '𝕏', 
       href: 'https://twitter.com/anasfashion',
-      bgColor: 'bg-black hover:bg-gray-900'
+      bgColor: '#000000'
     },
     { 
       name: 'YouTube', 
-      icon: 'yt', 
+      icon: '▶', 
       href: 'https://youtube.com/anasfashion',
-      bgColor: 'bg-[#ff0000] hover:bg-[#cc0000]'
+      bgColor: '#ff0000'
     },
   ];
 
   return (
     <section className="py-20 px-4 bg-amber-50">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-rose-800 mb-4 animate-fadeIn">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-rose-800 mb-4">
           Get in Touch
         </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto animate-fadeUp">
-          We’re here to help – reach out through any of these channels.
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          We&apos;re here to help – reach out through any of these channels.
         </p>
 
         {/* Info cards */}
@@ -66,10 +66,9 @@ export default function ContactInfo() {
           {infoItems.map((item, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fadeUp"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="text-4xl mb-4 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+              <div className="text-4xl mb-4">
                 {item.icon}
               </div>
               <h3 className="text-xl font-bold text-rose-800 mb-2">{item.title}</h3>
@@ -80,8 +79,8 @@ export default function ContactInfo() {
           ))}
         </div>
 
-        {/* Social links with brand colors */}
-        <div className="text-center animate-fadeUp animation-delay-400">
+        {/* Social links */}
+        <div className="text-center">
           <h3 className="text-2xl font-bold text-rose-800 mb-4">Follow Us</h3>
           <div className="flex justify-center space-x-4">
             {socialLinks.map((social) => (
@@ -90,10 +89,11 @@ export default function ContactInfo() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`w-12 h-12 ${social.bgColor} rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-md`}
+                className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-md text-white font-bold"
+                style={{ backgroundColor: social.bgColor }}
                 aria-label={social.name}
               >
-                <span className="text-white font-bold text-lg">{social.icon}</span>
+                {social.icon}
               </a>
             ))}
           </div>

@@ -18,8 +18,8 @@ const products: Product[] = [
   { id: 2, name: "Black Formal Blazer", price: 9999, image: "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&w=400", category: "Blazers" },
   
   // Shirts
-  { id: 3, name: "White Casual Shirt", price: 2499, image: "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&w=400", category: "Shirts" },
-  { id: 4, name: "Blue Formal Shirt", price: 2999, image: "https://images.pexels.com/photos/2773906/pexels-photo-2773906.jpeg?auto=compress&w=400", category: "Shirts" },
+  { id: 3, name: "White Casual Shirt", price: 2499, image: "men1.jfif", category: "Shirts" },
+  { id: 4, name: "Blue Formal Shirt", price: 2999, image: "men2.jfif", category: "Shirts" },
   { id: 5, name: "Black Slim Fit Shirt", price: 2799, image: "https://images.pexels.com/photos/2417860/pexels-photo-2417860.jpeg?auto=compress&w=400", category: "Shirts" },
   
   // Jeans
